@@ -7,12 +7,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css">
     <script src="main.js"></script>
-    <style>table {
-         boder: 1px blue
+    <style>
+    #content{
+        width: 450px;
+        margin: 0 auto;
+        padding: 0px 20px 20px;
+        background: white;
+        border: 2px solid navy;
     }
-    </style>
+
+    h1{
+        color: navy;
+    }
+
+    label{
+        width: 10em;
+        padding-right: 1em;
+        float: left;
+    }
+
+    #data input{
+        float: left;
+        width: 15em;
+        margin-bottom: .5em;
+    }
+
+    #buttons input{
+        float: left;
+        margin-bottom: .5em;
+    }
+    br{
+        clear: left;
+    }
+</style>
 </head>
 <body>
+
 
 <form method="Post" action="year.php">
     <table>
