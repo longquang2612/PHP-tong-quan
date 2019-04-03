@@ -7,28 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css">
     <script src="main.js"></script>
+    <style>table {
+         boder: 1px blue
+    }
+    </style>
 </head>
 <body>
-<div id="content">
-        <h1>Future Value Calculator</h1>
-        <form action="display_result.php" method="POST">
-            <div id="data">
-                <label>Invbrestment Amount:</label>
-                <input type="text" name="investment"
-                value="0">
-                <br>
-                <label>Yearly Interest Rate:</label>
-                <input type="text" name="rate" value="0">
-                <br>
-                <label>Number of Year:</label>
-                <input type="text" name="years" value="0">
-            </div>
-            <div id="Buttons">
-                <label>&nbsp;</label>
-                <input type="submit" value="Calculate">
-                <br>
-           </div>
-        </form>
+
+<form method="Post" action="year.php">
+    <table>
+        <h1> Ứng dụng Future Value Calculator </h1>
+		<div>Inventment Amounu<input type="number" name="numberone"></div>
+		<div>Yearly Interest Rate<input type="number" name="numbertwo"></div>
+		<div>Number of Years<input type="number" name="numberthree"></div>
+		<input type="submit" name="submit" value="count">
+    </table>    
+</form>
     
 </body>
 </html>
