@@ -10,14 +10,17 @@
 </head>
 <body>
     <?php
-        $number1 = array(1,2,3,4,5,6);
-        $number2 = array(7,8,9,10,11,12);
-        
-        $number3 = array_merge($number1, $number2);
-        for ($i = 0 ; $i <=5 ; $i++ )
-            $number3[$i] = $number1[$i]
-    
-      ?>  
+        $array1 = [1,7,2,4,4,8];
+        $array2 = array(2,7,3,4,5,6);
+        $array3 = $array1;
+        $index = 0;
+    for ($i = count($array1); $i < count($array1) + count($array2); $i++) {
+        $array3[$i] = $array2[$index];
+        $index++;
+    }
+        print_r($array3);
+    ?>  
+
         
 </body>
 </html>
